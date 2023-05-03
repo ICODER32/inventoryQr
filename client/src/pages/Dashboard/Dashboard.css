@@ -1,0 +1,37 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader circle {
+    fill: none;
+    stroke: #0099ff;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: loader 1.5s ease-in-out infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+        stroke-dasharray: 0 150;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        stroke-dasharray: 90 150;
+        stroke-dashoffset: -90;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        stroke-dasharray: 0 150;
+        stroke-dashoffset: -150;
+    }
+}
