@@ -6,6 +6,7 @@ const server = require("http").createServer(app);
 const io = require("socket.io")(server);
 const cors = require("cors");
 const path = require("path");
+const dotenv = require("dotenv").config();
 
 connectDatabase();
 

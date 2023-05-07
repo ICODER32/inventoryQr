@@ -20,7 +20,6 @@ const App = () => {
   const [loggedIn, setLoggedIn] = useState(localStorage.getItem("user_id"));
   const [isAdmin, setIsAdmin] = useState(false);
   const user_id = localStorage.getItem("user_id");
-  console.log(user_id);
 
   const getAdmin = async () => {
     const data = await axios.get("/api/users/getAdmin");

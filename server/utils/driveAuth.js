@@ -1,12 +1,13 @@
 module.exports = jsonData = {
-    "type": "service_account",
-    "project_id": "driveauth-385304",
-    "private_key_id": "2a03c1032ad1c5bdc2bf525021d0b311e9e333af",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDmjMQlufBbCR1\nSxk+5UabqLrayqNVpP6Psfb9ddNZRlIec72HQh09EYh6bdxHRC3nE/xljj1EfxKi\nllg/HPbe/EjCTlUPWkoIadJdSt6cWyTok1jZn6dGhpPSfjJ1mKZabOfozLd8Nzsg\nJ4KbjnKesvfvNFVeJsf+zLEMbp6ynMpQU2wVpcCh6V4vsM1eboe9mxr1YR4nNHFk\nruflZeLBtPp+nkcs3v3d5heo7YNWkyYUIGwSolkcMzuOkP4nmNQNI9eoR/oApDns\nepVworfuRkK0k+rbJQDNjioWVaSlNt8+RJAtZvDQ+ZMtTxKCTWO+9LwvnH27Clrz\nOauASUjLAgMBAAECggEABuenHNNO7BeOs+tKQVujofQTYIzdtjTEXbs5Dlp98v1W\nAcgxLRiq4pB/Yl8FcyiXfDxK4STjycq4lC+9fsDdgCKkyOMuAoQ7788Yg32UnS1k\ngKdO8CPAKm+uwTP+QQN5/+AvUZsEcSib+Dcc17PwHOURdorA5rl0vuxn5Zn0FTb+\n6QGFUQRXSDuQigMvt5dwKXrWE/r7vLatQ4vFI9zx7+jXUHLACTwVcG4O6XmI3bV1\nIbvAaZV/ICAAqQB8/1jgBYFVB1mM0vQv0D2G4gOAn/DBPA6izo4OYilfOaY5Yv5b\n/5LaC8GF7A6UfgfsEf3CoYMgCROyViZyWM6gEepfiQKBgQDmk3x3oFPkk/1v6PDB\nojztbOj53dJuUL3UP0bqy0W+aFMEyEn8MjFMpRDQwoImW++DRO1uAgTluauHGJGf\nrdKndUFcb7fJDagyYGUpmE5bs83h8zCPF2iN4p+ANsFF3UpauAyGm+O3PTHKDvWi\nyb6AkVhy3MiIFWKTLcFCtvUuWQKBgQDZK4CNmbUxzcI9OFcQdmigIjiRiaK/JENi\nFkxN67JIqPfRKgMExTgMA0bFX/rKHPYzvwBL35rh6mZr7Rne9tQFRMyRYxnv8GIG\nD7msvVeqIr+CeHsb5UearIzNR9JxkXRY7waPubpd3Pp1yH2b/hFyVdxLg6gKBkf0\nHapUCL1zwwKBgAaiq+xNYtyrHZoA3BzWbGZwweue5JVkIXJgN8w9+U3Xdrwmf2qQ\njzajcW5wiopMDwJ6E1MdH8L0qukCXf54ZB2JlE3ysRlKGVMJzx95UJf2/q/H7dfQ\nVqPup6Rq7vjxu1gM/99H0S/OxQYJlCwRHjhY9nCnxeWUp/eQU4V1+mxRAoGBAIIO\nW15xvuGkp76iDwH854t+8wG1u5Fc1j3XvLqtfIenKUJKNqSUt4v6Klfpsvd3gLpc\nmIDX2JmTFuNriyLMDw1YtmobP11CSHH42OlqOyXYyXgJTzDVjpxC2c/WQ2FgCp14\nCCXqxIGR5SzEdPUGoswmP1e58NiQCmdXnLnWwh6hAoGAfgaBwhi8uJqdKAsRBuer\nwKJ4tWUg8hrIfYUT07XPnuVYRQeQLPAL4L0SNVlV++pQP/kZdyZBjBaqP+7Sp1i2\nnr+zGk59BfcrKtnfOyDvaLfF6wkMyiS7erYvFKERq9FlpUX/C1g2vqJCyai9QSH0\nlEZ+eSfiDCUMFmVjRg/7anw=\n-----END PRIVATE KEY-----\n",
-    "client_email": "ibtisamanwar32@driveauth-385304.iam.gserviceaccount.com",
-    "client_id": "103867078239688444853",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ibtisamanwar32%40driveauth-385304.iam.gserviceaccount.com"
-}
+  type: "service_account",
+  project_id: process.env.GOOGLE_DRIVE_PROJECT_ID,
+  private_key_id: process.env.GOOGLE_DRIVE_PRIVATE_KEY_ID,
+  private_key:
+    "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDmjMQlufBbCR1\nSxk+5UabqLrayqNVpP6Psfb9ddNZRlIec72HQh09EYh6bdxHRC3nE/xljj1EfxKi\nllg/HPbe/EjCTlUPWkoIadJdSt6cWyTok1jZn6dGhpPSfjJ1mKZabOfozLd8Nzsg\nJ4KbjnKesvfvNFVeJsf+zLEMbp6ynMpQU2wVpcCh6V4vsM1eboe9mxr1YR4nNHFk\nruflZeLBtPp+nkcs3v3d5heo7YNWkyYUIGwSolkcMzuOkP4nmNQNI9eoR/oApDns\nepVworfuRkK0k+rbJQDNjioWVaSlNt8+RJAtZvDQ+ZMtTxKCTWO+9LwvnH27Clrz\nOauASUjLAgMBAAECggEABuenHNNO7BeOs+tKQVujofQTYIzdtjTEXbs5Dlp98v1W\nAcgxLRiq4pB/Yl8FcyiXfDxK4STjycq4lC+9fsDdgCKkyOMuAoQ7788Yg32UnS1k\ngKdO8CPAKm+uwTP+QQN5/+AvUZsEcSib+Dcc17PwHOURdorA5rl0vuxn5Zn0FTb+\n6QGFUQRXSDuQigMvt5dwKXrWE/r7vLatQ4vFI9zx7+jXUHLACTwVcG4O6XmI3bV1\nIbvAaZV/ICAAqQB8/1jgBYFVB1mM0vQv0D2G4gOAn/DBPA6izo4OYilfOaY5Yv5b\n/5LaC8GF7A6UfgfsEf3CoYMgCROyViZyWM6gEepfiQKBgQDmk3x3oFPkk/1v6PDB\nojztbOj53dJuUL3UP0bqy0W+aFMEyEn8MjFMpRDQwoImW++DRO1uAgTluauHGJGf\nrdKndUFcb7fJDagyYGUpmE5bs83h8zCPF2iN4p+ANsFF3UpauAyGm+O3PTHKDvWi\nyb6AkVhy3MiIFWKTLcFCtvUuWQKBgQDZK4CNmbUxzcI9OFcQdmigIjiRiaK/JENi\nFkxN67JIqPfRKgMExTgMA0bFX/rKHPYzvwBL35rh6mZr7Rne9tQFRMyRYxnv8GIG\nD7msvVeqIr+CeHsb5UearIzNR9JxkXRY7waPubpd3Pp1yH2b/hFyVdxLg6gKBkf0\nHapUCL1zwwKBgAaiq+xNYtyrHZoA3BzWbGZwweue5JVkIXJgN8w9+U3Xdrwmf2qQ\njzajcW5wiopMDwJ6E1MdH8L0qukCXf54ZB2JlE3ysRlKGVMJzx95UJf2/q/H7dfQ\nVqPup6Rq7vjxu1gM/99H0S/OxQYJlCwRHjhY9nCnxeWUp/eQU4V1+mxRAoGBAIIO\nW15xvuGkp76iDwH854t+8wG1u5Fc1j3XvLqtfIenKUJKNqSUt4v6Klfpsvd3gLpc\nmIDX2JmTFuNriyLMDw1YtmobP11CSHH42OlqOyXYyXgJTzDVjpxC2c/WQ2FgCp14\nCCXqxIGR5SzEdPUGoswmP1e58NiQCmdXnLnWwh6hAoGAfgaBwhi8uJqdKAsRBuer\nwKJ4tWUg8hrIfYUT07XPnuVYRQeQLPAL4L0SNVlV++pQP/kZdyZBjBaqP+7Sp1i2\nnr+zGk59BfcrKtnfOyDvaLfF6wkMyiS7erYvFKERq9FlpUX/C1g2vqJCyai9QSH0\nlEZ+eSfiDCUMFmVjRg/7anw=\n-----END PRIVATE KEY-----\n",
+  client_email: process.env.GOOGLE_DRIVE_CLIENT_EMAIL,
+  client_id: process.env.GOOGLE_DRIVE_CLIENT_ID,
+  auth_uri: process.env.GOOGLE_DRIVE_AUTH_URI,
+  token_uri: process.env.GOOGLE_DRIVE_TOKEN_URI,
+  auth_provider_x509_cert_url: process.env.GOOGLE_DRIVE_AUTH_PROVIDER,
+  client_x509_cert_url: process.env.GOOGLE_DRIVE_CLIENT_CERT,
+};

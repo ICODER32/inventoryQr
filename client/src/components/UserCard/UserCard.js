@@ -21,10 +21,10 @@ const UserCard = ({
     try {
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "q1s4yqgc"); // replace with your upload preset
+      formData.append("upload_preset", process.env.REACT_APP_CLOUDPRESET); // replace with your upload preset
 
       const res = await fetch(
-        "https://api.cloudinary.com/v1_1/dlwwbb8tv/image/upload", // replace with your Cloudinary cloud name
+        `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_PROJECT_ID}/image/upload`, // replace with your Cloudinary cloud name
         {
           method: "POST",
           body: formData,
